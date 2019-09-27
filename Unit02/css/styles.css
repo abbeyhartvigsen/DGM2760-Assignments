@@ -1,0 +1,11 @@
+header {
+    background-image: url("../images/Inspector-Clouseau-resized.jpg");
+    color: #ffff;
+    max-width: 250px;
+    max-height: 192px;
+}
+
+footer {
+    color: white;
+    background-color: blue;
+}
