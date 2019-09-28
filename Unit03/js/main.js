@@ -43,30 +43,31 @@ function evalGuess() {
 
 function giveAward() {
     console.log('Congratulations!')
+    let imagePath = '#'
 
     switch(totalGuesses) {
         case 1:
         case 2:
         case 3: 
-            console.log('Blue ribbon for you!')
+            imagePath = 'images/blue.jpg'
             break;
         case 4: 
-            console.log('Case 4 just happened')
-            break;
         case 5:
         case 6: 
-        console.log('Red ribbon for you!')
+            imagePath = 'images/red.jpg'
         break;
         default: 
-        console.log('Yellow ribbon for you!')
+            imagePath = 'images/yellow.jpg'
     }
 
     const awardImage = document.createElement('img') //Creates an 'img'
-    awardImage.setAttribute('src', 'images/blue-ribbon-resizedr.jpg')
+    awardImage.setAttribute('src', imagePath)
 
 
     const ribbon = document.querySelector('#ribbon')
 
     ribbon.appendChild(awardImage)
+
+    // only append child if the ribbon element does not have any child nodes yet 
 
 }
