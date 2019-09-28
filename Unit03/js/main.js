@@ -28,10 +28,12 @@ function evalGuess() {
 
     if (gamerGuess == correctNumber) {
         console.log(`gamerGuess is equal to correctNumber`)
-    } else if (gamerGuess > correctNumber) {
+    } else if (gamerGuess > correctNumber && gamerGuess < 16) {
         feedback.innerText = 'too high, try again'
-    } else if (gamerGuess < correctNumber) {
+    } else if (gamerGuess < correctNumber && gamerGuess > 0) {
         feedback.innerText = 'too low, try again'
+    } else {
+        feedback.innerText = 'Please choose a number between 1 and 15 and try again'
     }
         console.log(`Not equal`)
 }
