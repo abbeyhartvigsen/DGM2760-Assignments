@@ -1,0 +1,23 @@
+header {
+    max-width: 960px;
+    margin: 0 auto;
+    background-image: url("../images/header.jpg");
+    height: 600px;
+}
+
+main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #fff;
+}
+
+header h2 {
+    color: #fff;
+}
+
+main h2 {
+    color: black;
+}
