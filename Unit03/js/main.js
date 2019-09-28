@@ -6,7 +6,7 @@
 
 //pick a random number between 0 and 16
 
-const correctNumber = Math.floor(Math.random() * 15)
+let correctNumber = Math.floor(Math.random() * 15)
 
 console.log(`The correctNumber is ${correctNumber}`)
 
@@ -16,9 +16,13 @@ let totalGuesses = 0
 
 let gamerGuess = 0
 
+correctNumber += 1
+
 function evalGuess {
     totalGuesses += 1 // totalGuesses = totalGuesses + 1
-    gamerGuess = document.querySelector('#guess').nodeValue
+    gamerGuess = document.querySelector('#guess').Value
+
+    console.log(totalGuesses, gamerGuess)
 
     const feedback = document.querySelector('#feedback')
 }
