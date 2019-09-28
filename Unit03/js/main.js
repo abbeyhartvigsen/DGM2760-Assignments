@@ -18,11 +18,20 @@ let gamerGuess = 0
 
 correctNumber += 1
 
-function evalGuess {
+function evalGuess() {
     totalGuesses += 1 // totalGuesses = totalGuesses + 1
-    gamerGuess = document.querySelector('#guess').Value
+    gamerGuess = document.querySelector('#guess').value
 
     console.log(totalGuesses, gamerGuess)
 
     const feedback = document.querySelector('#feedback')
+
+    if (gamerGuess == correctNumber) {
+        console.log(`gamerGuess is equal to correctNumber`)
+    } else if (gamerGuess > correctNumber) {
+        feedback.innerText = 'too high, try again'
+    } else if (gamerGuess < correctNumber) {
+        feedback.innerText = 'too low, try again'
+    }
+        console.log(`Not equal`)
 }
