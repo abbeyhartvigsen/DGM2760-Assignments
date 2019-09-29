@@ -39,6 +39,8 @@ function evalGuess() {
         totalGuesses -= 1
     }
         document.querySelector('#attempts').innerText = totalGuesses
+
+       
 }
 
 function giveAward() {
@@ -71,3 +73,5 @@ function giveAward() {
     // only append child if the ribbon element does not have any child nodes yet 
 
 }
+
+document.getElementById("evalGuess").disabled = true;
