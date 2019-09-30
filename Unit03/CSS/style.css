@@ -68,8 +68,13 @@ main p#feedback {
     color: green;
 }
 
+.articles {
+    display: flex;
+    flex-direction: row;
+}
+
 main article {
-    float: left;
+    width: 15%;
 }
 
 main article div {
@@ -83,7 +88,7 @@ main article.a1 {
 }
 
 main article.a2 {
-    width: 15px;
+    width: 250px;
 }
 
 main article.a3 {
@@ -92,6 +97,11 @@ main article.a3 {
 
 main article.a4 {
     width: 30%;
+    height: 10px;
+}
+
+img {
+    height: 100px; /* fixed */
 }
 
 main article.a2 div {
