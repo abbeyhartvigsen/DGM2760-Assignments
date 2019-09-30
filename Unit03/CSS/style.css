@@ -68,7 +68,7 @@ main p#feedback {
     color: green;
 }
 
-.articles {
+.articles { /* added */
     display: flex;
     flex-direction: row;
 }
@@ -124,7 +124,7 @@ main article.a1 button {
 }
 
 footer {
-   color: blue;
+   background: blue; /* fixed */
    clear: both;
 }
 
