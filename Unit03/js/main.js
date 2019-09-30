@@ -74,4 +74,4 @@ function giveAward() {
 
 }
 
-document.getElementById("evalGuess").disabled = true;
+// document.getElementById("evalGuess").disabled = true;
