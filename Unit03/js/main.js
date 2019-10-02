@@ -16,7 +16,7 @@ let totalGuesses = 0
 
 let gamerGuess = 0
 
-correctNumber += 1
+// correctNumber +=
 
 function evalGuess() {
     totalGuesses += 1 // totalGuesses = totalGuesses + 1
