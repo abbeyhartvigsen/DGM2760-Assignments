@@ -46,7 +46,6 @@ function evalGuess() {
 function giveAward() {
     console.log('Congratulations!')
     let imagePath = '#'
-
     switch(totalGuesses) {
         case 1:
         case 2:
@@ -71,7 +70,17 @@ function giveAward() {
     ribbon.appendChild(awardImage)
 
     // only append child if the ribbon element does not have any child nodes yet 
-
 }
 
+
+// function disableIt() {
+//     if (giveAward() == true)
+//       document.getElementById('guess').disabled = true;
+//       variable button = document.createElement("div")
+//       document.button.appendChild(div);
+// }
+
+
 // document.getElementById("evalGuess").disabled = true;
+
+
