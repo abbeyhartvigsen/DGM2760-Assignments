@@ -69,6 +69,8 @@ function giveAward() {
 
     ribbon.appendChild(awardImage)
 
+    document.getElementById('buttonId').setAttribute("disabled", "disabled");
+
     // only append child if the ribbon element does not have any child nodes yet 
 }
 
