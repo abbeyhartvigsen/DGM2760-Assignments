@@ -59,7 +59,7 @@ function getFortune(fate) {
     let message
     switch (fate) {
         case 1:
-            messsage = "win a billion dollars!"
+            message = "win a billion dollars!"
             break;
         case 2:
             message = "win an all expense paid trip around the world for one month!"
@@ -77,7 +77,7 @@ function getFortune(fate) {
             message = "An error occured"
             break;
     }
-    return fate
+    return message
 }
 
 let fate = getRandomIntInclusive(1, 5)
