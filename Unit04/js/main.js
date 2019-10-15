@@ -72,13 +72,16 @@ function getFortune(fate) {
             break;
         case 5:
             message = "get a luxury yacht!"
-    
+            break;
         default:
             message = "An error occured"
             break;
     }
     return message
+    
 }
+
+
 
 let fate = getRandomIntInclusive(1, 5)
 let day = getRandomIntInclusive(1, 30)
@@ -86,7 +89,12 @@ let month = getRandomIntInclusive(1, 12)
 const monthName = getMonthName(month)
 // const fortune = getFortune(fate)
 
-const fortuneRevealed = `On ${monthName} ${day}, you will ${fate}`
+// const fortuneRevealed = `On ${monthName} ${day}, you will ${fate}`
+const fortuneRevealed = `On ${monthName} ${day}, you will ` + getFortune(fate)
+
+console.log(fortuneRevealed)
+
+console.log(getFortune(fate))
 
 document.querySelector('#fortune').innerText = fortuneRevealed
 
