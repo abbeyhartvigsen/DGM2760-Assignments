@@ -9,7 +9,19 @@ const listTrees = () => {
     trees.forEach(tree => {
         treeList += `${tree} <br>`
     })
-    displayResults.innerHTML = treeList
+    displayResults.innerHTML = `${treeList} <span>${trees.length} elements long</span>`
 }
 
 listTrees()
+
+document.querySelector('#add_redwood').onclick = () => {
+    trees.push('redwood')
+    listTrees()
+}
+
+//add pear to the start
+
+document.querySelector('#add_pear').onclick = () => {
+    trees.unshift('Pear')
+    listTrees()
+}
