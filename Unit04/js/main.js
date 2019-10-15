@@ -6,8 +6,7 @@ function getRandomIntInclusive(min, max) {
   }
 
 
-let fate = getRandomIntInclusive(1, 5)
-let day = getRandomIntInclusive(1, 30)
+
 
 function getMonthName(month) {
 let name
@@ -81,9 +80,14 @@ function getFortune(fate) {
     return fate
 }
 
+let fate = getRandomIntInclusive(1, 5)
+let day = getRandomIntInclusive(1, 30)
 let month = getRandomIntInclusive(1, 12)
 const monthName = getMonthName(month)
+// const fortune = getFortune(fate)
 
 const fortuneRevealed = `On ${monthName} ${day}, you will ${fate}`
 
-document.querySelector
+document.querySelector('#fortune').innerText = fortuneRevealed
+
+// fortune.appendChild(fortuneRevealed)
