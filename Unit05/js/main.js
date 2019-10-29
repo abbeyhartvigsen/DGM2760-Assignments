@@ -87,22 +87,26 @@ document.querySelector('#lowerTrees').onclick = () => {
 }
 
 document.querySelector('#showName3').onclick = () => {
+    console.log(trees)
     if (trees.length > 1) {
-        trees[2]
+        // trees[2]
         listTrees()
         document.getElementById("numberThree").innerHTML = trees[2];
     } else 
-    CheckIfZero('I cannot give the third tree because there is less than three trees',1)
+    console.log('hello')
+    CheckIfZero('I cannot give the third tree because there is less than three trees',2);
+    // document.getElementById("numberThree").innerHTML = undefined;
     // document.getElementById("numberThree").innerHTML = no third tree;
 }
 
 document.querySelector('#showName4').onclick = () => {
     if (trees.length > 2) {
-        trees[3]
+        // trees[3]
         listTrees()
         document.getElementById("numberFour").innerHTML = trees[3];
     } else 
-    CheckIfZero('I cannot give the fourth tree because there is less than four trees',2)
+    CheckIfZero('I cannot give the fourth tree because there is less than four trees',3);
+    // document.getElementById("numberFour").innerHTML = undefined;
     // document.getElementById("numberFour").innerHTML = no fourth tree;
 }
 
