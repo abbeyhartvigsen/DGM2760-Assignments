@@ -100,11 +100,13 @@ document.querySelector('#showName3').onclick = () => {
 }
 
 document.querySelector('#showName4').onclick = () => {
+    console.log(trees)
     if (trees.length > 2) {
         // trees[3]
         listTrees()
         document.getElementById("numberFour").innerHTML = trees[3];
     } else 
+    console.log('hi')
     CheckIfZero('I cannot give the fourth tree because there is less than four trees',3);
     // document.getElementById("numberFour").innerHTML = undefined;
     // document.getElementById("numberFour").innerHTML = no fourth tree;
