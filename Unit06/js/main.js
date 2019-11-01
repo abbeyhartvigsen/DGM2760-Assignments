@@ -2,15 +2,15 @@ function tellStory() {
     //noun Array = querySelector('#noun') //lowercase String split()
     //repeat for adjectives and verbs
 
-    var nounArray = document.querySelector('#noun').textContent.trim().split(/\s+/)
+    var nounArray = document.querySelector('#noun').value.trim().split(/\s+/)
     
     console.log(noun)
 
-    var adjectiveArray = document.querySelector('#adjectives').textContent.trim().split(/\s+/)
+    var adjectiveArray = document.querySelector('#adjectives').value.trim().split(/\s+/)
     
     console.log(adjectives)
 
-    var verbArray = document.querySelector('#verbs').textContent.trim().split(/\s+/)
+    var verbArray = document.querySelector('#verbs').value.trim().split(/\s+/)
     
     console.log(verbs)
 
