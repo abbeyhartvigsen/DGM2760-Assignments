@@ -1,4 +1,4 @@
-let message 
+let message
 
 const pizza = {
     crust: 'thin',
