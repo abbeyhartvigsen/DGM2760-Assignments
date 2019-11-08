@@ -1,0 +1,172 @@
+body h1, h2, h3, h4, h5, h6, ul, li {margin:0; padding: 0;}
+body {
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+header, nav, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url("../images/truck.jpg");
+    height: 200px;
+}
+
+header h1 {
+    color: #fff;
+    padding: 1rem 0 0 2%;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 3rem;
+}
+
+header h2 {
+    color: #fff;
+    padding: 0.5rem 0 0 2%;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 2rem;
+}
+
+#box h2 {
+    padding: 0;
+}
+#box h1{
+    padding: 0;
+}
+
+header, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*Navigation for Desktop and Tablet*/
+
+@media only screen and (min-width: 601px) {
+    div.smallMenuLink {display: none;}
+    nav#smallNavArea {display: none;}
+    ul#primaryNavigation {display: block;}
+    nav {background-color: red;}
+    nav ul#primaryNavigation {
+        margin-left: 2%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    /* main menu items float side by side */
+    nav ul#primaryNavigation li {
+        float: left;
+        border-right: solid 1px #000;
+    }
+    nav ul#primaryNavigation li a {
+        display: block;
+        color: white;
+        font-size: 1em;
+        padding: 1.2em .9em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    nav ul#primaryNavigation li a:hover {
+        color: black;
+    }
+}
+/* End of desktop navigation*/
+
+/* Navigation for small screen */
+
+@media only screen and (max-width: 600px) {
+    nav#smallNavArea{display: block;}
+    ul#primaryNavigation {display: none;}
+
+    nav#smallNavArea {height: 100vh; background-color: #adadad;}
+    nav#smallNavArea ul {padding: .5em 0;}
+    nav#smallNavArea ul li {list-style: none;}
+    nav#smallNavArea ul li a {
+        display: block;
+        list-style: none;
+        margin: .4em 2%;
+        padding: .6rem 0;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+    div.smallMenuLink {
+        display: block;
+        background-color: red;
+    }
+    div.smallMenuLink a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: .6rem;
+    }
+} 
+
+/* end of small navigation */
+main h1 {
+    color: blue;
+    padding: 1rem 0 0 2%;
+}
+
+main h2 {
+    color: green;
+    padding: .6rem 0 0 2%;
+}
+
+main p {padding: 0.2rem 0 0 2%; line-height: 150%;}
+
+main ul{margin: 0;}
+
+main ul.objectives li {
+margin-left: 3%;
+}
+
+main img.myPhoto {width: 75%}
+
+
+
+/* main button {
+    display: block;
+    background-color: grey;
+    border: solid 1px silver;
+    border-radius: 10px;
+    padding: .5em;
+    margin: .5em 0;
+    width: 50%;
+} */
+
+/* main article {
+    float: left;
+    width: 60%;
+} */
+
+/* main aside {
+    float: left;
+    width: 40%;
+} */
+
+textarea {
+    text-align: inherit;
+}
+
+/* main div#displayResults {
+    background-color: white;
+    margin-left: 2%;
+    padding: .2em 4%;
+    line-height: 150%;
+} */
+
+/* main div#displayResults span {color:red;}
+main div#error {color: orange; margin-left: 2%; background-color: yellow;} */
+
+footer {
+    background-color: green;
+    clear: both;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    padding: 0.5rem 0;
+}
