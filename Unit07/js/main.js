@@ -8,14 +8,15 @@ const pizza = {
         console.log('buildPizza Method has been called')
         message = `Baking a pizza on a ${pizza.crust} crust with ${pizza.topping} and cheese just for you.`
         document.querySelector('#feedback').textContent = message
-    }
+    },
     shoppingList: () => {
         let flour = 1
         if (pizza.crust === 'thick') flour *= 2
-        if (pizza.size) === 'large') flour *= 2
+        if (pizza.size === 'large') flour *= 2
         //do the same for large property
         message = `You will need to buy ${flour} cups of flour and 1 lb of ${pizza.topping}.`
         document.querySelector('#feedback').textContent = message
+        console.log('hello')
     }
 }
 
@@ -33,3 +34,4 @@ document.querySelector('#large').addEventListener('click', () => pizza.size = 'l
 document.querySelector('#build').addEventListener('click', pizza.buildPizza)
 //hookup the shoppingList method call here
 document.querySelector('#shopping').addEventListener('click', pizza.shoppingList)
+console.log('hi')
