@@ -25,5 +25,7 @@ const question = {
 
 document.querySelector('#answer1').addEventListener('click', () => question.check(1))
 document.querySelector('#answer2').addEventListener('click', () => question.check(2))
+document.querySelector('#answer3').addEventListener('click', () => question.check(3))
+document.querySelector('#answer4').addEventListener('click', () => question.check(4))
 
 question.display()
