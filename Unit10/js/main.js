@@ -3,13 +3,15 @@ function duplicateMenu() {
     let topList = document.querySelectorAll('ul#primaryNavigation li a')
 
     //create the new list items for the bottom of the page
-    let newList = document.createElement('ul')
+    // let newList = document.createElement('ul')
+    //do I need newList?
 
     let smallNavContainer = document.getElementById('smallNavArea')
     console.log(smallNavContainer)
 
     let originalNav = document.getElementById('primaryNavigation')
     let cloneNav = originalNav.cloneNode(true)
+    cloneNav.id = ""
     // console.log(originalNav)
     console.log(cloneNav)
 

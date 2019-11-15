@@ -78,7 +78,7 @@ header, main, footer {
     nav#smallNavArea{display: block;}
     ul#primaryNavigation {display: none;}
 
-    nav#smallNavArea {height: 100vh; background-color: #adadad;}
+    nav#smallNavArea {height: 100vh; background-color: #adadad; color: blue;}
     nav#smallNavArea ul {padding: .5em 0;}
     nav#smallNavArea ul li {list-style: none;}
     nav#smallNavArea ul li a {
