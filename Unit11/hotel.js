@@ -1,4 +1,4 @@
-{
+export const hotel = [{
     "hotels": [
         {
             "name": "Marriott",
@@ -39,3 +39,4 @@
         }
     ]
 }
+]

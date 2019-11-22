@@ -1,3 +1,6 @@
+import { hotel } from "../hotel.js"
+console.log(hotel)
+const hoteljson = hotel
 async function getHotelData() {
     try {
         const response = await fetch('../hotel.json')
@@ -5,54 +8,80 @@ async function getHotelData() {
     } catch (vacation) {
         // var vacation
         console.error(vacation)
+        // hotelInfo = vacation
     }
 }
-let hotelData = {}
-getHotelData().then(data => hotelData = data)
-console.log('hello')
+getHotelData().then(data => {
+    // console.log("then test")
+    // console.log(data)
+    return data
+})
+// let hotelData = getHotelData()
+let hotelData = hoteljson
+console.log("test data")
+console.log(hotelData)
 
 // document.querySelectorAll("a")
 //store in a variable document.querySelectorAll("a")
 //use that variable to loop over each element and add event listener to each one. Use for each loop 
-//----FIX BELOW IF NEEDED--//
+
 document.querySelectorAll("a")
-console.log('what is up?')
+// let math = function(input1,input2){
+//     let result = input1 + input2
+//     return result
+
+// }
+// console.log(math(3,4))
+
 let anchorObject = document.querySelectorAll("a")
+
 console.log(anchorObject)
 for (let i = 0; i < anchorObject.length; i++) {
-    console.log(anchorObject[i])
-    anchorObject[i].addEventListener
+    // console.log(anchorObject[i])
+    anchorObject[i].addEventListener("click",() => {
+        console.log(anchorObject[i])
+
+        console.log(hotelData[0].hotels[i])
+        hotelInfo(anchorObject[i])
+        console.log("click")
+    } )
     //do add event listener stuff
 
+
 }
-// // anchorObject.forEach(getHotelData => addEventListener(click, getHotelData))//--THIS IS THE PROBLEM--//
-// console.log('are you working?')
-
-// //CAN I TRY SOMETHING LIKE:
-// getHotelData.forEach(callback())//--FIX THIS
-
-// //--OR THIS?
-
-// getHotelData.forEach(anchorObject => addEventListener (click, getHotelData))
-
-//--MAYBE I SHOULD NOT DO FOR EACH AND ADD EVENT LISTENER TOGETHER??
 
 
-console.log('are you working?')
-
-//--FIX ABOVE IF NEEDED--//
-
-document.querySelector("#marriott").addEventListener('click', hotelInfo)
-console.log('Christmas')
+// document.querySelector("#marriott").addEventListener('click', hotelInfo())
 
 function hotelInfo(event) {
-    let hotelChoice = hotelData.hotels.find(hotel => {
-        return event.target.id === hotel.name.toLowerCase()
+    let hotelChoice = hotelData[0].hotels.find(hotel => {
+        let answer = "false"
+        if(event.target.id === hotel.name){
+            answer = "true"
+        }
+        console.log(answer)
+        return event.target.id === hotel.name
     })
     console.log(hotelChoice)
 
-    document.querySelector("#hotelName").textConent = `${hotelChoice.name} Hotel`
+    document.querySelector("#hotelInfo").textContent = `${hotelChoice.name} Hotel`
     console.log('Thanksgiving')
 }
+
+// function hotelInfo(event) {
+//     let hotelChoice = hotelData[0].hotels.find(hotel => {
+//         let answer = "false"
+//         if(event.target.id === hotel.name.toLowerCase()){
+//             answer = "true"
+//         }
+//         console.log(answer)
+//         return event.target.id === hotel.name.toLowerCase()
+//     })
+//     console.log(hotelChoice)
+
+//     document.querySelector("#hotelInfo").textContent = `${hotelChoice.name} Hotel`
+//     console.log('Thanksgiving')
+// }
+
 
 //do the same with sharaton and hilton?
