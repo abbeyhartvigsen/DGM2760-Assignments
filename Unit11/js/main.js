@@ -1,5 +1,5 @@
 import { hotel } from "../hotel.js"
-console.log(hotel)
+// console.log(hotel)
 const hoteljson = hotel
 async function getHotelData() {
     try {
@@ -7,7 +7,7 @@ async function getHotelData() {
         return await response.json()//Return to the JSON object
     } catch (vacation) {
         // var vacation
-        console.error(vacation)
+        // console.error(vacation)
         // hotelInfo = vacation
     }
 }
@@ -33,38 +33,39 @@ document.querySelectorAll("a")
 // }
 // console.log(math(3,4))
 
-let anchorObject = document.querySelectorAll("a")
+// let anchorObject = document.querySelectorAll("a")
 
-console.log(anchorObject)
-for (let i = 0; i < anchorObject.length; i++) {
-    // console.log(anchorObject[i])
-    anchorObject[i].addEventListener("click",() => {
-        console.log(anchorObject[i])
+// console.log(anchorObject)
+// for (let i = 0; i < anchorObject.length; i++) {
+//     // console.log(anchorObject[i])
+//     anchorObject[i].addEventListener("click",() => {
+//         console.log(anchorObject[i])
 
-        console.log(hotelData[0].hotels[i])
-        hotelInfo(anchorObject[i])
-        console.log("click")
-    } )
-    //do add event listener stuff
+//         console.log(hotelData[0].hotels[i])
+//         hotelInfo(anchorObject[i])
+//         console.log("click")
+//     } )
+//     //do add event listener stuff
 
 
-}
+
 
 
 // document.querySelector("#marriott").addEventListener('click', hotelInfo())
 
-function hotelInfo(event) {
+function hotelInfo(click) {
     let hotelChoice = hotelData[0].hotels.find(hotel => {
         let answer = "false"
-        if(event.target.id === hotel.name){
+        if (click.target.id === hotel.name) {
             answer = "true"
         }
         console.log(answer)
-        return event.target.id === hotel.name
+        return click.target.id === hotel.name
     })
     console.log(hotelChoice)
 
     document.querySelector("#hotelInfo").textContent = `${hotelChoice.name} Hotel`
+    document.appendChild("hotelInfo");
     console.log('Thanksgiving')
 }
 
@@ -85,3 +86,18 @@ function hotelInfo(event) {
 
 
 //do the same with sharaton and hilton?
+
+
+let anchorObject = document.querySelectorAll("a")
+
+console.log(anchorObject)
+for (let i = 0; i < anchorObject.length; i++) {
+    // console.log(anchorObject[i])
+    anchorObject[i].addEventListener("click", () => {
+        console.log(anchorObject[i])
+
+        console.log(hotelData[0].hotels[i])
+        hotelInfo(anchorObject[i])
+        console.log("click")
+    })
+    //do add event listener stuff
