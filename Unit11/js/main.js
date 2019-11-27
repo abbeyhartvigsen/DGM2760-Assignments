@@ -1,6 +1,6 @@
 import { hotel } from "../hotel.js"
 console.log(hotel)
-const hoteljson = hotel
+let hotelData = {}
 async function getHotelData() {
     try {
         const response = await fetch('../hotel.json')
@@ -14,10 +14,10 @@ async function getHotelData() {
 getHotelData().then(data => {
     // console.log("then test")
     // console.log(data)
-    return data
+    return hotelData = data
 })
 // let hotelData = getHotelData()
-let hotelData = hoteljson
+//let hotelData = hoteljson
 console.log("test data")
 console.log(hotelData)
 
@@ -25,7 +25,7 @@ console.log(hotelData)
 //store in a variable document.querySelectorAll("a")
 //use that variable to loop over each element and add event listener to each one. Use for each loop 
 
-document.querySelectorAll("a")
+//document.querySelectorAll("a")
 // let math = function(input1,input2){
 //     let result = input1 + input2
 //     return result
@@ -38,13 +38,13 @@ let anchorObject = document.querySelectorAll("a")
 console.log(anchorObject)
 for (let i = 0; i < anchorObject.length; i++) {
     // console.log(anchorObject[i])
-    anchorObject[i].addEventListener("click",() => {
-        console.log(anchorObject[i])
+    anchorObject[i].addEventListener("click",hotelInfo)
+     /*    console.log(anchorObject[i])
 
         console.log(hotelData[0].hotels[i])
         hotelInfo(anchorObject[i])
         console.log("click")
-    } )
+    } ) */
     //do add event listener stuff
 
 
@@ -54,7 +54,7 @@ for (let i = 0; i < anchorObject.length; i++) {
 // document.querySelector("#marriott").addEventListener('click', hotelInfo())
 
 function hotelInfo(event) {
-    let hotelChoice = hotelData[0].hotels.find(hotel => {
+    let hotelChoice = hotelData.hotels.find(hotel => {
         let answer = "false"
         if(event.target.id === hotel.name){
             answer = "true"
@@ -65,7 +65,7 @@ function hotelInfo(event) {
     console.log(hotelChoice)
 
     document.querySelector("#hotelInfo").textContent = `${hotelChoice.name} Hotel`
-    console.log('Thanksgiving')
+    //console.log('Thanksgiving')
 }
 
 // function hotelInfo(event) {
