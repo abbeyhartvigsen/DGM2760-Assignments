@@ -99,4 +99,4 @@ for (let i = 0; i < anchorObject.length; i++) {
             console.log("click")
         })
     //do add event listener stuff
-    }
+    } //adding } to line 102
