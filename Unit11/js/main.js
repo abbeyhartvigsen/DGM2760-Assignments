@@ -1,6 +1,11 @@
 import { hotel } from "../hotel.js"
+<<<<<<< HEAD
 // console.log(hotel)
 const hoteljson = hotel
+=======
+console.log(hotel)
+let hotelData = {}
+>>>>>>> e75d4036ae4d64944596b30a18b7231127db473f
 async function getHotelData() {
     try {
         const response = await fetch('../hotel.json')
@@ -14,10 +19,10 @@ async function getHotelData() {
 getHotelData().then(data => {
     // console.log("then test")
     // console.log(data)
-    return data
+    return hotelData = data
 })
 // let hotelData = getHotelData()
-let hotelData = hoteljson
+//let hotelData = hoteljson
 console.log("test data")
 console.log(hotelData)
 
@@ -25,7 +30,7 @@ console.log(hotelData)
 //store in a variable document.querySelectorAll("a")
 //use that variable to loop over each element and add event listener to each one. Use for each loop 
 
-document.querySelectorAll("a")
+//document.querySelectorAll("a")
 // let math = function(input1,input2){
 //     let result = input1 + input2
 //     return result
@@ -35,6 +40,7 @@ document.querySelectorAll("a")
 
 // let anchorObject = document.querySelectorAll("a")
 
+<<<<<<< HEAD
 // console.log(anchorObject)
 // for (let i = 0; i < anchorObject.length; i++) {
 //     // console.log(anchorObject[i])
@@ -47,14 +53,32 @@ document.querySelectorAll("a")
 //     } )
 //     //do add event listener stuff
 
+=======
+console.log(anchorObject)
+for (let i = 0; i < anchorObject.length; i++) {
+    // console.log(anchorObject[i])
+    anchorObject[i].addEventListener("click",hotelInfo)
+     /*    console.log(anchorObject[i])
+
+        console.log(hotelData[0].hotels[i])
+        hotelInfo(anchorObject[i])
+        console.log("click")
+    } ) */
+    //do add event listener stuff
+>>>>>>> e75d4036ae4d64944596b30a18b7231127db473f
 
 
 
 
 // document.querySelector("#marriott").addEventListener('click', hotelInfo())
 
+<<<<<<< HEAD
 function hotelInfo(click) {
     let hotelChoice = hotelData[0].hotels.find(hotel => {
+=======
+function hotelInfo(event) {
+    let hotelChoice = hotelData.hotels.find(hotel => {
+>>>>>>> e75d4036ae4d64944596b30a18b7231127db473f
         let answer = "false"
         if (click.target.id === hotel.name) {
             answer = "true"
@@ -65,8 +89,7 @@ function hotelInfo(click) {
     console.log(hotelChoice)
 
     document.querySelector("#hotelInfo").textContent = `${hotelChoice.name} Hotel`
-    document.appendChild("hotelInfo");
-    console.log('Thanksgiving')
+    //console.log('Thanksgiving')
 }
 
 // function hotelInfo(event) {
