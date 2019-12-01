@@ -38,64 +38,65 @@ console.log(hotelData)
 console.log(anchorObject)
 for (let i = 0; i < anchorObject.length; i++) {
     // console.log(anchorObject[i])
-    anchorObject[i].addEventListener("click",hotelInfo)
-     /*    console.log(anchorObject[i])
+    anchorObject[i].addEventListener("click", hotelInfo)
+    /*    console.log(anchorObject[i])
 
-        console.log(hotelData[0].hotels[i])
-        hotelInfo(anchorObject[i])
-        console.log("click")
-    } ) */
+       console.log(hotelData[0].hotels[i])
+       hotelInfo(anchorObject[i])
+       console.log("click")
+   } ) */
     //do add event listener stuff
 
 
 
 
-// document.querySelector("#marriott").addEventListener('click', hotelInfo())
+    // document.querySelector("#marriott").addEventListener('click', hotelInfo())
 
-function hotelInfo(event) {
-    let hotelChoice = hotelData.hotels.find(hotel => {
-        let answer = "false"
-        if (click.target.id === hotel.name) {
-            answer = "true"
-        }
-        console.log(answer)
-        return click.target.id === hotel.name
-    })
-    console.log(hotelChoice)
+    function hotelInfo(event) {
+        let hotelChoice = hotelData.hotels.find(hotel => {
+            let answer = "false"
+            if (click.target.id === hotel.name) {
+                answer = "true"
+            }
+            console.log(answer)
+            return click.target.id === hotel.name
+        })
+        console.log(hotelChoice)
 
-    document.querySelector("#hotelInfo").textContent = `${hotelChoice.name} Hotel`
-    //console.log('Thanksgiving')
-}
+        document.querySelector("#hotelInfo").textContent = `${hotelChoice.name} Hotel`
+        //console.log('Thanksgiving')
+    }
 
-// function hotelInfo(event) {
-//     let hotelChoice = hotelData[0].hotels.find(hotel => {
-//         let answer = "false"
-//         if(event.target.id === hotel.name.toLowerCase()){
-//             answer = "true"
-//         }
-//         console.log(answer)
-//         return event.target.id === hotel.name.toLowerCase()
-//     })
-//     console.log(hotelChoice)
+    // function hotelInfo(event) {
+    //     let hotelChoice = hotelData[0].hotels.find(hotel => {
+    //         let answer = "false"
+    //         if(event.target.id === hotel.name.toLowerCase()){
+    //             answer = "true"
+    //         }
+    //         console.log(answer)
+    //         return event.target.id === hotel.name.toLowerCase()
+    //     })
+    //     console.log(hotelChoice)
 
-//     document.querySelector("#hotelInfo").textContent = `${hotelChoice.name} Hotel`
-//     console.log('Thanksgiving')
-// }
-
-
-//do the same with sharaton and hilton?
+    //     document.querySelector("#hotelInfo").textContent = `${hotelChoice.name} Hotel`
+    //     console.log('Thanksgiving')
+    // }
 
 
-let anchorObject = document.querySelectorAll("a")
+    //do the same with sharaton and hilton?
 
-console.log(anchorObject)
-for (let i = 0; i < anchorObject.length; i++) {
-    // console.log(anchorObject[i])
-    anchorObject[i].addEventListener("click", () => {
-        console.log(anchorObject[i])
 
-        console.log(hotelData[0].hotels[i])
-        hotelInfo(anchorObject[i])
-        console.log("click")
-    })
+    let anchorObject = document.querySelectorAll("a")
+
+    console.log(anchorObject)
+    for (let i = 0; i < anchorObject.length; i++) {
+        // console.log(anchorObject[i])
+        anchorObject[i].addEventListener("click", () => {
+            console.log(anchorObject[i])
+
+            console.log(hotelData[0].hotels[i])
+            hotelInfo(anchorObject[i])
+            console.log("click")
+        })
     //do add event listener stuff
+    }
