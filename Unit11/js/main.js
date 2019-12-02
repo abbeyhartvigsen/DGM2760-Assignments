@@ -65,6 +65,15 @@ for (let i = 0; i < anchorObject.length; i++) {
 
         document.querySelector("#hotelInfo").textContent = `${hotelChoice.name} Hotel`
 
+        document.querySelector("#address").textContent = `${hotelChoice.address}`
+
+        document.querySelector("#rooms").textContent = `${hotelChoice.rooms}`
+
+        document.querySelector("#gym").textContent = `${hotelChoice.gym}`
+
+        document.querySelector("#type").textContent = `${hotelChoice.roomTypes}`
+
+        document.getElementById("picture").src = `${hotelChoice.picture}`;
         
         //console.log('Thanksgiving')
     }

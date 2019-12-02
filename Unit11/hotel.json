@@ -11,7 +11,7 @@
                 "Single"
             ],
             "address": "125 S. State St., Riverside, California",
-            "picture": "marriot.gif"
+            "picture": "./images/marriot.gif"
         },
         {
             "name": "Sheraton",
@@ -22,7 +22,7 @@
                 "Queen"
             ],
             "address": "55 N Washington Blvd., New York City, New York",
-            "picture": "peacock.gif"
+            "picture": "./images/peacock.gif"
         },
         {
             "name": "Hilton",
@@ -35,7 +35,7 @@
                 "Single"
             ],
             "address": "5121 N Queen's St., Mesa, Arizona",
-            "picture": "white.gif"
+            "picture": "./images/white.gif"
         }
     ]
 }
