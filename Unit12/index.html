@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>12 Character Creator</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Character Generator</h1>
+        <h2>Final Project</h2>
+    </header>
+    <main>
+        <!-- <h1>Pizza Order Form</h1>
+        <h2>What I learned</h2>
+        <ul class="objectives">
+            <li>Create an object literal with properties and methods</li>
+            <li>Set the properties in an object</li>
+            <li>Access the properties in an object</li>
+            <li>Access the methods of an object</li>
+            <li>Use math operators</li>
+            <li>Use template literals</li>
+            <li>Use querySelector and textContent to dynamically change text on the screen</li>
+        </ul> -->
+        <h2>Gender</h2>
+
+        <input type="radio" id="girl" name="gender" value="girl" checked>
+        <label for="girl">Girl</label>
+
+        <input type="radio" id="boy" name="gender" value="boy">
+        <label for="boy">Boy</label>
+
+        <h2>Species</h2>
+        <input type="radio" id="human" name="species" value="human">
+        <label for="human">Human</label>
+        <input type="radio" id="alien" name="species" value="alien" checked>
+        <label for="alien">Alien</label>
+
+        <h2>Age</h2>
+        <input type="radio" id="teenager" name="age" value="teenager" checked>
+        <label for="teenager">Teenager</label>
+        <input type="radio" id="youngAdult" name="age" value="youngAdult">
+        <label for="youngAdult">Young Adult</label>
+
+        <h2>Generate Person</h2>
+        <button id='build'>Generate Person</button>
+
+        <h2>Character Profile</h2>
+        <p id="feedback"></p> 
+
+        <h2>Height</h2>
+        <button id='height'>Height</button>
+        <p id=heightFeedback></p>
+
+
+        <div id="box">
+            <!-- <h1>My Nonsense Story</h1>
+            <h2>What I learned</h2>
+            <ul class="objectives">
+                <li>Extract text content from html elements</li>
+                <li>Convert a string into an array</li>
+                <li>Access elements of an array</li>
+                <li>Escape string characters</li>
+                <li>String concatenation</li>
+                <li>Change a string to all lower case</li>
+            </ul> -->
+            <article>
+                <h2>Three Hobbies</h2>
+                <textarea id="hobbies"> 
+            </textarea>
+            </article>
+
+            <article>
+                <h2>Three Adjectives to Describe Your Person</h2>
+                <textarea id="adjectives">
+            </textarea>
+            </article>
+
+            <article>
+                <h2>Two Dislikes of Your Person</h2>
+                <textarea id="dislikes"></textarea>
+            </article>
+
+            <button onclick="tellStory()">Tell The Story</button>
+            <p id="story"></p>
+
+        </div>
+
+
+
+    </main>
+    <footer>
+        <p>Assignment for DGM 2760 by Abbey Hartvigsen</p>
+    </footer>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
