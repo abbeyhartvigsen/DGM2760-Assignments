@@ -1,7 +1,7 @@
 //let message
 
 
-import { species } from '../data/species.js'
+//import { species } from '../data/species.js'
 
 const person = {
     gender: 'girl',
