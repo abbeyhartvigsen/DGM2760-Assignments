@@ -1,7 +1,9 @@
-//let message
 
 
-//import { species } from '../data/species.js'
+
+
+//CHARACTER GENDER, AGE, AND SPECIES//
+
 
 const person = {
     gender: 'girl',
@@ -14,15 +16,15 @@ const person = {
         //crust with ${pizza.topping} and cheese just for you.
         document.querySelector('#feedback').textContent = message
     },
-    heightList: () => {
-        let height= 1
-        if (person.gender === 'boy') height *= 2
-        if (person.age === 'youngAdult') height *= 2
-        //do the same for large property
-        message = `Your person is ${height} feet.`
-        document.querySelector('#heightFeedback').textContent = message
-        console.log('hello')
-    }
+    // heightList: () => {
+    //     let height = 1
+    //     if (person.gender === 'boy') height *= 2
+    //     if (person.age === 'youngAdult') height *= 2
+    //     //do the same for large property
+    //     message = `Your person is ${height} feet.`
+    //     document.querySelector('#heightFeedback').textContent = message
+    //     console.log('hello')
+    // }
 }
 
 
@@ -45,6 +47,24 @@ document.querySelector('#build').addEventListener('click', person.buildPerson)
 // document.querySelector('#shopping').addEventListener('click', pizza.shoppingList)
 // console.log('hi')
 
+
+//POWERS and ARRAY SECTION
+
+var powers = 
+['fly', 'strength', 'speed']
+
+console.log(powers)
+console.log('buildPowers Method has been called')
+message = `Your character has the power of ${powers[]}`
+console.log(message)
+document.querySelector('#powersParagraph').textContent = message;
+
+document.querySelector('#pickPower').addEventListener('click', person[0])
+
+//if that button is active then display power array 0
+
+
+//STORY SECTION
 
 function tellStory() {
     //noun Array = querySelector('#noun') //lowercase String split()
