@@ -16,7 +16,7 @@
     </header>
     <main>
         <!--HEIGHT AND POWERS-->
-        <h2>Character Profile</h2>
+        <h2>Character Generator</h2>
 
         <h2>Gender</h2>
 
@@ -26,11 +26,11 @@
         <input type="radio" id="boy" name="gender" value="boy">
         <label for="boy">Boy</label>
 
-        <h2>Species</h2>
-        <input type="radio" id="human" name="species" value="human">
+        <!-- <h2>Species</h2> -->
+        <!-- <input type="radio" id="human" name="species" value="human">
         <label for="human">Human</label>
         <input type="radio" id="alien" name="species" value="alien" checked>
-        <label for="alien">Alien</label>
+        <label for="alien">Alien</label> -->
 
         <h2>Age</h2>
         <input type="radio" id="teenager" name="age" value="teenager" checked>
@@ -38,19 +38,21 @@
         <input type="radio" id="youngAdult" name="age" value="youngAdult">
         <label for="youngAdult">Young Adult</label>
 
-        <h2>Generate Person</h2>
-        <button id='build'>Generate Person</button>
 
-        <p id="feedback"></p> 
 
         <h2>Height</h2>
-        <button id='height'>Height</button>
+        <!-- <button id='height'>Height</button> -->
+        <input type="radio" id="tall" name="height" value="tall" checked>
+        <label for="tall">Tall</label>
+        <input type="radio" id="short" name="height" value="short">
+        <label for="short">Short</label>
+
         <p id=heightFeedback></p>
 
         <h2 id="superPowers">Powers</h2>
 
-        <input type="radio" id="fly" name="powers" value="fly" checked>
-        <label for="fly">fly</label>
+        <input type="radio" id="flight" name="powers" value="fligh" checked>
+        <label for="fligh">flight</label>
 
         <input type="radio" id="strength" name="powers" value="strength">
         <label for="strength">Strength</label>    
@@ -58,9 +60,16 @@
         <input type="radio" id="speed" name="powers" value="speed">
         <label for="speed">Speed</label>   
 
-        <button id='pickPower'>Pick a Power</button>
+        <h2>Generate Person</h2>
+        <button id='build'>Generate Person</button>
 
-        <p id="powersParagraph"></p>
+        <p id="feedback"></p> 
+
+
+
+        <!-- <button id='pickPower'>Pick a Power</button> -->
+
+        <!-- <p id="powersParagraph"></p> -->
 
 
         <div id="box">

@@ -7,11 +7,14 @@
 
 const person = {
     gender: 'girl',
-    age: 'teenager',
+    age: 'teenage',
     species: 'human',
+    height: 'short',
+    power: 'flight',
     buildPerson: function () {
         console.log('buildPerson Method has been called')
-        message = `Your character is a ${person.age} ${person.gender} who is a ${person.species}`
+        message = `Your character is a ${person.age} ${person.gender} and is ${person.height} 
+        and has the power of ${person.power}`
         console.log(message)
         //crust with ${pizza.topping} and cheese just for you.
         document.querySelector('#feedback').textContent = message
@@ -34,11 +37,20 @@ document.querySelector('#boy').addEventListener('click', () => person.gender = '
 
 //same things as lines 21 and 22 for toppings and size
 
-document.querySelector('#human').addEventListener('click', () => person.species = 'human')
-document.querySelector('#alien').addEventListener('click', () => person.species = 'alien')
+// document.querySelector('#human').addEventListener('click', () => person.species = 'human')
+// document.querySelector('#alien').addEventListener('click', () => person.species = 'alien')
 
-document.querySelector('#teenager').addEventListener('click', () => person.age = 'teenager')
-document.querySelector('#youngAdult').addEventListener('click', () => person.age = 'Young Adult')
+document.querySelector('#teenager').addEventListener('click', () => person.age = 'teenage')
+document.querySelector('#youngAdult').addEventListener('click', () => person.age = 'young adult')
+
+document.querySelector('#short').addEventListener('click', () => person.height = 'short')
+document.querySelector('#tall').addEventListener('click', () => person.height = 'tall')
+
+document.querySelector('#flight').addEventListener('click', () => person.power = 'flight')
+document.querySelector('#strength').addEventListener('click', () => person.power = 'strength')
+document.querySelector('#speed').addEventListener('click', () => person.power = 'speed')
+
+
 
 document.querySelector('#build').addEventListener('click', person.buildPerson)
 
@@ -50,16 +62,16 @@ document.querySelector('#build').addEventListener('click', person.buildPerson)
 
 //POWERS and ARRAY SECTION
 
-var powers = 
-['fly', 'strength', 'speed']
+// var powers = 
+// ['fl', 'strength', 'speed']
 
-console.log(powers)
-console.log('buildPowers Method has been called')
-message = `Your character has the power of ${powers[]}`
-console.log(message)
-document.querySelector('#powersParagraph').textContent = message;
+// console.log(powers)
+// console.log('buildPowers Method has been called')
+// message = `Your character has the power of ${powers[0]}`
+// console.log(message)
+// document.querySelector('#powersParagraph').textContent = message;
 
-document.querySelector('#pickPower').addEventListener('click', person[0])
+// document.querySelector('#pickPower').addEventListener('click', person[0])
 
 //if that button is active then display power array 0
 
@@ -89,7 +101,7 @@ function tellStory() {
 
     // var verb = document.querySelector('#verb').split(/\s+/);
 
-    const myStory = `There once lived some ${nounArray[0]}s. They had ${adjectiveArray[0]} ${nounArray[1]}s. One day some ${adjectiveArray[1]} ${nounArray[2]}s ${verbArray[0]} and then ${verbArray[1]}. Then a ${nounArray[0]} said to them, "Hello, you are very ${adjectiveArray[2]} ${nounArray[2]}s. Yesterday I saw a ${nounArray[3]} and a ${nounArray[4]}." A ${nounArray[2]} said, "That's interesting! I also saw a ${nounArray[5]} and a ${nounArray[6]}." The ${nounArray[0]}s said, "That's interesting" and then they took the ${nounArray[2]}s to the ${nounArray[2]}'s favorite place.`;
+    const myStory = `There once lived some ${nounArray[0]}s. They had ${adjectiveArray[0]} ${nounArray[1]}s. One day some ${adjectiveArray[1]} ${nounArray[2]}s ${verbArray[0]} and then ${verbArray[1]}. Then a ${nounArray[0]} said to them, "Hello, you are very ${adjectiveArray[2]} ${nounArray[2]}s. Yesterday I saw a ${nounArray[2]} and a ${nounArray[1]}." A ${nounArray[2]} said, "That's interesting! I also saw a ${nounArray[0]} and a ${nounArray[1]}." The ${nounArray[0]}s said, "That's interesting" and then they took the ${nounArray[2]}s to the ${nounArray[2]}'s favorite place.`;
     console.log(myStory)
     //get a reference to the querySelector('#story') = myStory
     let storyContainer = document.querySelector('#story')

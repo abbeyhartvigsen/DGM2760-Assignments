@@ -16,8 +16,10 @@ header, main, footer {
     margin: 0 auto;
 }
 header {
-    background-image: url("../images/pizza.jpg");
-    height: 200px;
+    background-image: url("../images/supermanlonger-resizedagain.jpg");
+    height: 400px;
+    width: 1000x;
+    background-repeat: no-repeat;
 }
 
 header h1 {
