@@ -82,7 +82,7 @@ function tellStory() {
     //noun Array = querySelector('#noun') //lowercase String split()
     //repeat for adjectives and verbs
 
-    var nounArray = document.querySelector('#hobbies').value.trim().split(/\s+/)
+    var nounArray = document.querySelector('#personsName').value.trim().split(/\s+/)
 
     // console.log(noun)
 
@@ -101,9 +101,11 @@ function tellStory() {
 
     // var verb = document.querySelector('#verb').split(/\s+/);
 
-    const myStory = `There once lived some ${nounArray[0]}s. They had ${adjectiveArray[0]} ${nounArray[1]}s. One day some ${adjectiveArray[1]} ${nounArray[2]}s ${verbArray[0]} and then ${verbArray[1]}. Then a ${nounArray[0]} said to them, "Hello, you are very ${adjectiveArray[2]} ${nounArray[2]}s. Yesterday I saw a ${nounArray[2]} and a ${nounArray[1]}." A ${nounArray[2]} said, "That's interesting! I also saw a ${nounArray[0]} and a ${nounArray[1]}." The ${nounArray[0]}s said, "That's interesting" and then they took the ${nounArray[2]}s to the ${nounArray[2]}'s favorite place.`;
+    const myStory = `There once lived a person named ${nounArray[0]}. This person was very ${adjectiveArray[0]}. One day ${nounArray[0]} was ${adjectiveArray[1]} because they got to do ${verbArray[0]}. After that was finished they were ${adjectiveArray[2]} because they then got to do ${verbArray[1]}.`;
     console.log(myStory)
     //get a reference to the querySelector('#story') = myStory
     let storyContainer = document.querySelector('#story')
     storyContainer.textContent = myStory
 }
+
+
